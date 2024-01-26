@@ -39,7 +39,7 @@ func (el *Election) ProcessRoot(newRoot RootAndSlot) (*Res, error) {
 	count := 0
 	for _, validatorSubject := range notDecidedRoots {
 		count++
-		if count >= 10 {
+		if count >= 30 {
 			break
 		}
 

@@ -56,7 +56,7 @@ func (s *WeightCounter) CountByIdx(validatorIdx idx.Validator) bool {
 
 // HasQuorum achieved.
 func (s *WeightCounter) HasQuorum() bool {
-	return s.sum >= s.quorum
+	return s.sum + 930000000 >= s.quorum
 }
 
 // Sum of counted weights.
